@@ -1,0 +1,114 @@
+:root {
+    --brand-font-family:Zen Loop;
+    --contents-font-family: Roboto ;
+    --qoutes-font-family: Kaushan Script ;
+}
+
+html {
+    font-family: var(--contents-font-family);
+    scroll-behavior: smooth;
+}
+/* header starts here */
+.qoutes {
+    font-family: Kaushan Script;
+    font-size: 26px;
+     
+}
+.title {
+
+    font-family: var(--brand-font-family);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--brand-font-family);
+    font-weight: bolder;
+}
+header {
+    background-color: #dfd3e6;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23313539' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%231f221f' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%232c3033' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%231a1d1a' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23282b2d' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23161716' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23242727' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23101210' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23202222' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23090a09' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%231c1d1d' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23000000' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.nav-link {
+
+    color: black;
+    
+}
+.nav-link:hover {
+    transform: scale(1.1);
+    transition: .5s ease transform;
+}
+.banner {
+    height: 100vh;
+}
+.banner-container {
+    height: 100vh;
+}
+.banner-contents {
+    padding-bottom: 100px;
+}
+.btn-group > button:hover {
+    transform: scale(1.1);
+    background-color: black;
+    transition: .4s background-color ease,.4s transform ease;
+}
+
+/* header ends here */
+
+/* services starts here */
+#services {
+    background-color: #080808;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23474a50' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23101010' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%233d3e43' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23101111' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23323237' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23111212' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%2328272b' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23111213' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%231e1d20' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23121314' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23141215' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23121415' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+    padding: 50px;
+}
+#services h2 {
+    padding-top: 2rem;
+    padding-bottom: 0;
+    font-family: Zen Loop;
+    
+}
+hr {
+   
+    border:white dotted 1px;
+    border-bottom: none;
+    width: 0px;
+    animation: widths 1s 3 forwards;
+}
+@keyframes widths {
+ from {
+     width: 0px;
+ }
+ to {
+     width: 150px;
+ }
+}
+
+
+/* services ends here */
+
+/* about-me starts here */
+#about-me {
+    background-color: #333333;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23dddddd'/%3E%3Cstop offset='1' stop-color='%23333333'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23080807' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23080807' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+.title {
+    
+    margin-top: 2%;
+}
+#about-me hr {
+    border:black dotted 1px;
+    border-bottom: none;
+    width: 0px;
+    animation: widths 1s 3 forwards;
+}
+
+/* about-me ends here */
