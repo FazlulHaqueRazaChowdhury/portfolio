@@ -322,6 +322,12 @@ input{
 footer{
     overflow: hidden;
 }
+
+@media(max-width:440px) {
+    h1{
+        font-size:25px;
+    }
+}
 /* feedback ends here */
 
 /* connect starts here */
