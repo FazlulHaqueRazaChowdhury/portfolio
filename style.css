@@ -1,3 +1,4 @@
+
 :root {
     --brand-font-family:Zen Loop;
     --contents-font-family: Roboto ;
@@ -42,8 +43,23 @@ header {
 .nav-link {
 
     color: black;
+   
     
 }
+
+.navbar-nav ul li {
+    content: '';
+    position: absolute !important;
+    top: calc(100% + 5px) !important;
+    left: 0;
+
+
+    background-color: rgb(170,167,173);
+    width: 100%;
+    height: 15px;
+    border-radius: 1000px;
+}
+
 .nav-link:hover {
     transform: scale(1.1);
     transition: .5s ease transform;
@@ -66,7 +82,19 @@ a {
     background-color: black;
     transition: .4s background-color ease,.4s transform ease;
 }
-
+.btn-group > button:hover > a{
+    color: white !important;
+    text-decoration: none !important;
+}
+@media screen and (max-width:600px) {
+   
+   
+    header {
+        height: 100vh;
+        background-size: cover;
+    }
+    
+}
 /* header ends here */
 
 /* services starts here */
@@ -184,9 +212,10 @@ hr {
     width: 0%;
     height: 15px;
     border-radius: 1000px;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
 }
 .SKILL ul li.html::after {
     animation-name: html1;
@@ -248,11 +277,59 @@ hr {
     background-color: rgba(155, 152, 152, 0.11);
     color: white;
     padding: 0px !important;
-    margin: 20px 5px;
+    margin: 30px 15px;
    
 }
 .card:hover {
     margin-top :-15px;
-    transition: margin-top .4 ease;
+    
+    -webkit-box-shadow: 4px 3px 31px 10px rgba(237,255,236,0.42); 
+    box-shadow: 4px 3px 31px 10px rgba(237,255,236,0.42);
+    transition: 1s ease;
 }
 /* projects ends here */
+
+/* feedback starts here */
+#connect {
+    background-color: #e5f8ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23bbccc6' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a6aaaa' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23b8c5c0' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b7baba' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23b4bebb' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23c9cbcb' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b1b7b5' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23dbdcdc' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23adb1b0' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23ededed' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aaaaaa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23ffffff' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+#connect hr {
+   
+    border:black dotted 5px;
+    border-bottom: none;
+    width: 0px;
+    animation: widths 1s 1 forwards;
+}
+@keyframes widths {
+ from {
+     width: 0px;
+ }
+ to {
+     width: 150px;
+ }
+}
+input{
+    border-radius: 25px;
+
+}
+footer{
+    overflow: hidden;
+}
+/* feedback ends here */
+
+/* connect starts here */
+/* #connect {
+    background-color: #696969;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23080000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%231a1b1a' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%230a0405' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23171918' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%230c070a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23151616' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%230d0b0d' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23121414' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%230f0e10' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230f1111' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23111112' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%230c0d0e' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+} */
+/* connect ends here */
